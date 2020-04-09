@@ -1,0 +1,27 @@
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	height: 100vh;
+	
+	background-color: #f4f4f4;
+	color: #333;
+}
+
+.form-input {
+	outline: none;
+	margin: 0.3rem;
+	max-width: 5rem;
+}
+
+.clockBox {
+	width: 50vw;
+	height: 50vh;
+}
+
+.canvas {
+	width: 60vh;
+	height: 60vh;
+}

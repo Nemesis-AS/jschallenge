@@ -1,0 +1,17 @@
+body {
+	font-family: "Night Machine";
+	background-color: #f4f4f4;
+	
+}
+
+.align-center {
+	text-align: center;
+}
+
+.fontDiff {
+	font-family: sans-serif;
+}
+
+li {
+	margin-top: .5rem;
+}

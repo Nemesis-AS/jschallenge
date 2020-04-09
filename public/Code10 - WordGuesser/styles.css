@@ -1,0 +1,100 @@
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.game-box {
+	padding-top: 5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 60vh;
+	height: 60vh;
+}
+
+.blank-box, .letter-box, .image-box {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid black;
+	font-size: 2rem;
+	padding: 1rem;
+}
+
+.blank {
+	margin: 10px;
+}
+
+.letter-box {
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.char-btn {
+	flex: 0 18%;
+	height: 22%;
+	margin-bottom: 2%;
+
+	background-color: #333;
+	color: #f4f4f4;
+	border: 2px solid #333;
+	border-radius: 4px;
+	font-size: 1rem;
+	outline: none;
+	cursor: pointer;
+
+	transition: 0.2s;
+}
+
+.char-btn:hover {
+	background-color: #f4f4f4;
+	color: #333;
+}
+
+.disabled {
+	background-color: #7d7c7c;
+	color: #fafafa;
+	pointer-events: none;
+}
+
+.controls {
+	margin: 0;
+	margin-top: .5rem;
+
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	text-align: right;
+}
+
+.controlBtn {
+	background-color: #333;
+	color: #f4f4f4;
+
+	border: 2px solid #333;
+	border-radius: .5rem;
+	padding: .3rem;
+	min-width: 10%;
+	font-size: 1rem;
+
+	cursor: pointer;
+	outline: none;
+}
+
+.controlBtn:hover {
+	background-color: #fafafa;
+	color: #333;
+}
+
+.win-dialog {
+	margin: auto;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}

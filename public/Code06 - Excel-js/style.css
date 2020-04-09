@@ -1,0 +1,45 @@
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	flex-direction: column;
+}
+
+td {
+	border: 1px solid black;
+	min-width: 2rem;
+}
+
+.tableDiv {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+
+	text-align: center;
+}
+
+#ghost {
+	border: none;
+}
+
+#excelTable {
+	border: 1px solid black;
+	border-collapse: collapse;
+
+	font-family: "Comic Sans MS";
+}
+
+.headers {
+	font-weight: bold;
+}
+
+.tableInput {
+	background-color: #f4f4f4;
+	outline: none;
+	border: none;
+	margin: 0;
+
+	min-width: 5rem;
+}

@@ -1,0 +1,24 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.heading {
+	position: absolute;
+	top: 3rem;
+}
+
+.converter {
+	text-align: center;
+}
+
+.textInput {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	outline: none;
+}
+
+.unitInput {
+	outline: none;
+}

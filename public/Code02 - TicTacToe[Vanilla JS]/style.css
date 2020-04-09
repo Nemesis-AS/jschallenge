@@ -1,0 +1,67 @@
+:root {
+	--text-color: #f4f4f4;
+	--bg-color: #333;
+}
+
+body {
+	background-color: #333;
+	color: #f4f4f4;
+
+	margin: 0;
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#board {
+	margin: 2rem;
+	height: 50vh;
+	width: 50vh;
+
+	font-family: "Night Machine";
+	font-size: 2rem;
+	text-align: center;
+}
+
+#c2, #c5, #c8 {
+	border-left: 3px solid var(--text-color);
+	border-right: 3px solid var(--text-color);
+}
+
+#c4, #c5, #c6 {
+	border-top: 3px solid var(--text-color);
+	border-bottom: 3px solid var(--text-color);
+}
+
+td {
+	width: 33%;
+	height: 33%;
+}
+
+#restartBtn {
+	background-color: var(--text-color);
+	color: var(--bg-color);
+
+	outline: none;
+	border: 1px solid var(--bg-color);
+	border-radius: 1.5rem;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#restartBtn:hover {
+	background-color: var(--bg-color);
+	color: var(--text-color);
+}
+
+.text {
+	position: absolute;
+	top: 2rem;
+
+	font-size: 2rem;
+	font-color: var(--text-color);
+	font-family: "Night Machine";
+}

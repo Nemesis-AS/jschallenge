@@ -1,0 +1,52 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
+}
+
+.main-box {
+	min-width: 60vh;
+	min-height: 60vh;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.game-box {
+
+	display: flex;
+	align-items: center;
+}
+
+.ques-box {
+	margin: 1rem;
+	font-size: 2rem;
+	text-align: right;
+	width: 50%;
+}
+
+.input-box {
+	margin: 1rem;
+	width: 40%;
+}
+
+.textBox {
+	width: 100%;
+	outline: none;
+	padding: .5rem;
+	border: 1px hidden;
+	border-radius: .5rem;
+}
+
+.score-box {
+	margin: 1rem;
+	text-align: center;
+	font-family: 'Intro';
+	font-size: 2rem;
+}

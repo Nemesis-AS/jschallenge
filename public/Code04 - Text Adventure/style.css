@@ -1,0 +1,56 @@
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.gameBox {
+	font-family: "Night Machine";
+	font-size: 1.5rem;
+	text-align: center;
+
+	background-color: #25a954;
+	padding: 1rem;
+	width: 50vw;
+	height: 50vh;
+
+	border: 4px solid white;
+	border-radius: 1.5rem;
+}
+
+.quesBox {
+	height: 60%;
+	width: 100%;
+}
+
+.optionBox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 40%;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.button {
+	width: 40%;
+	min-height: 40%;
+
+	font-family: "Segoe UI";
+	font-size: 1rem;
+
+	margin: 0.3rem;
+	border: 2px solid black;
+	border-radius: 1rem;
+	outline: none;
+	cursor: pointer;
+	
+	color: #f4f4f4;
+	background-color: #3888ff;
+}
+
+.button:hover {
+	background-color: #104492;
+}

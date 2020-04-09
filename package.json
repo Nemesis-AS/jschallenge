@@ -1,0 +1,14 @@
+{
+  "name": "jschallenge",
+  "version": "0.1.0",
+  "description": "A compilation of small js projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Nemesis",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

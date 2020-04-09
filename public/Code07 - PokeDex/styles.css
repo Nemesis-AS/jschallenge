@@ -1,0 +1,99 @@
+body {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: "Lucida Sans";
+}
+
+.centered {
+	text-align: center;
+}
+
+h1 {
+	position: absolute;
+	top: 2rem;
+}
+
+thead {
+	font-weight: bolder;
+}
+
+.pokeInfoDiv {
+	height: 50vh;
+	overflow-y: scroll;
+}
+
+.pokeTable {
+	width: 60vw;
+	text-align: center;
+	border: 2px solid #f4f4f4;
+	border-collapse: collapse;
+	margin: auto;
+}
+
+td {
+	border: 1px solid #f4f4f4;
+	padding: 2px;
+	transition: 0.1s;
+}
+
+tbody>tr>td:hover {
+	background-color: var(--text-color-main);
+	color: var(--bg-color-main);
+}
+
+a {
+	color: #26d86d;
+	text-decoration: none;
+}
+
+.transform {
+	text-transform: capitalize;
+}
+
+.url-btn {
+	margin: 4px;
+	padding: 8px;
+	background-color: #26d86d;
+	color: #f4f4f4;
+	font-weight: bolder;
+	border: 2px hidden black;
+	border-radius: 16px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.url-btn:hover {
+	background-color: #333;
+	color: #26d86d;
+}
+
+.btn {
+	padding: 1rem;
+	background-color: var(--text-color-main);
+	color: var(--bg-color-main);
+	font-weight: bolder;
+	border: 2px solid black;
+	border-radius: 16px;
+	cursor: pointer;
+	transition: 0.3s;
+	outline: none;
+}
+
+.btn:hover {
+	background-color: var(--bg-color-main);
+	color: var(--text-color-main);
+}
+
+.disabled, .disabled:hover {
+	background: #656565;
+	color: #fafafa;
+	cursor: default;
+}
+
+.pagination {
+	display: flex;
+	justify-content: space-around;
+}

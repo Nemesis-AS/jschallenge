@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Challenge1 - BGChanger</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../commonFiles/common-styles.css">
+</head>
+<body link="#00e" vlink="#00e" class="light">
+	<div class="backLink"><a href="../">&larr;</a></div>
+
+	<form>
+		<div class="form-group">
+			<select name="colorType" id="colorTypeSelect">
+				<option value="hex">Hex</option>
+				<br>
+				<hr>
+				<option value="name">Name</option>
+			</select>
+
+			<input type="text" name="colorValue" id="color">
+		</div>
+		<div class="preview-color"></div>
+		
+		<button type="button" id="subBtn">Change!</button>
+	</form>
+
+	<script src="script.js" type="module"></script>
+</body>
+</html>
