@@ -2,6 +2,9 @@ import createFooter from "../CommonFiles/common-script.js";
 
 createFooter();
 
+/*
+@todo Add another page to view card and pass card ID using URL
+*/
 
 const pokeInfoTable = document.querySelector(".pokeInfoTable");
 const prevBtn = document.querySelector("#btn-prev");
