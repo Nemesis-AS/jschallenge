@@ -1,6 +1,8 @@
 export default function createFooter() {
-
-	document.body.innerHTML += `<footer class=footer>Copyright&copy; 2020 by Nemesis&trade;</footer>`;
+	const footerEl = document.createElement("footer");
+	footerEl.innerHTML = "Copyright&copy; 2020 by Nemesis&trade;";
+	footerEl.classList.add("footer");
+	document.body.append(footerEl);
 };
 
 export function themeBtn() {

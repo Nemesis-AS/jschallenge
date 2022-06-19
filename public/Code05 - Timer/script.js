@@ -21,7 +21,7 @@ function formatTime(time) {
 	let remTime = time - (hr*3600);
 	min = Math.floor(remTime/60);
 	sec = remTime - (min * 60);
-	let timeString = `${hr}: ${min}: ${sec}`;
+	let timeString = `${String(hr).padStart(2, "0")}: ${String(min).padStart(2, "0")}: ${String(sec).padStart(2, "0")}`;
 
 	return timeString;
 }
@@ -52,6 +52,6 @@ stopBtn.addEventListener('click', (e) => {
 
 resetBtn.addEventListener('click', (e) => {
 	if (!started && needReset) {
-		timerDiv.innerText = '0: 0: 0';
+		timerDiv.innerText = '00: 00: 00';
 	}
 });

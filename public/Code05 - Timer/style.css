@@ -1,30 +1,12 @@
 body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .timerDiv {
-	font-family: "Night Machine";
-	font-size: 3rem;
-	text-align: center;
-	height: 15vh;
-}
-
-.button {
-	outline: none;
-	cursor: pointer;
-
-	border: 1px solid #f4f4f4;
-	border-radius: 1rem;
-	background-color: #f4f4f4;
-	color: #333;
-	transition: 0.3s;
-}
-
-.button:hover {
-	border-color: #333;
-	background-color: #333;
-	color: #f4f4f4;
+    font-size: 3rem;
+    text-align: center;
+    height: 15vh;
 }

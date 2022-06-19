@@ -1,4 +1,4 @@
-import {createFooter} from "../CommonFiles/common-script.js";
+import createFooter from "../CommonFiles/common-script.js";
 
 createFooter();
 
