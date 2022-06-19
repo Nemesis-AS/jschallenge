@@ -1,5 +1,6 @@
 # jschallenge
-Some challenges that you can try during Quarantine!
+
+A place for my small, random projects;
 
 # Challenges
 
@@ -16,3 +17,4 @@ Some challenges that you can try during Quarantine!
 11. Typing Game
 12. Snippet Manager[WIP]
 13. Math Game[Easy Edition]
+14. Currency Charts[WIP]

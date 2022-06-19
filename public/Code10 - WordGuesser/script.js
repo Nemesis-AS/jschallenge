@@ -3,8 +3,8 @@ import createFooter from "../CommonFiles/common-script.js";
 createFooter();
 
 
-// Missing Asuma Image
-const wordsList = ["Tobirama", "Kakashi", "Naruto", "Sakura", "Sasuke", "Asuma", "Shikamaru", "Choji", "Ino", "Kurenai", "Hinata", "Kiba", "Shino", "Guy", "Neji", "Lee", "Tenten", "Itachi",  "Gaara", "Tsunade", "Minato", "Kushina", "Temari", "Jiraiya", "Shizune", "Karin", "Orochimaru", "Suigetsu", "Sai", "Konohamaru", "Yamato", "Iruka", "Obito", "Kabuto", "Rin", "Deidara", "Sasori", "Kisame", "Pain", "Hidan", "Kakuzu", "Zetsu", "Tobi", "Yahiko", "Konan", "Jugo", "Guren", "Yuukimaru", "Madara", "Hashirama"];
+// Missing Asuma Image -> "Asuma"
+const wordsList = ["Tobirama", "Kakashi", "Naruto", "Sakura", "Sasuke", "Shikamaru", "Choji", "Ino", "Kurenai", "Hinata", "Kiba", "Shino", "Guy", "Neji", "Lee", "Tenten", "Itachi",  "Gaara", "Tsunade", "Minato", "Kushina", "Temari", "Jiraiya", "Shizune", "Karin", "Orochimaru", "Suigetsu", "Sai", "Konohamaru", "Yamato", "Iruka", "Obito", "Kabuto", "Rin", "Deidara", "Sasori", "Kisame", "Pain", "Hidan", "Kakuzu", "Zetsu", "Tobi", "Yahiko", "Konan", "Jugo", "Guren", "Yuukimaru", "Madara", "Hashirama"];
 const alphabetList = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
 const imageThumb = document.querySelector(".charThumb");

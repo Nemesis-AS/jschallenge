@@ -1,6 +1,6 @@
 export default function createFooter() {
 	const footerEl = document.createElement("footer");
-	footerEl.innerHTML = "Copyright&copy; 2020 by Nemesis&trade;";
+	footerEl.innerHTML = "A work of <a href='https://github.com/nemesis-as' target='_blank'>Nemesis&trade;</a>";
 	footerEl.classList.add("footer");
 	document.body.append(footerEl);
 };
