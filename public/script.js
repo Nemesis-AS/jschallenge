@@ -1,27 +1,22 @@
-const folderList = document.querySelector('#folderList');
+const folderList = document.getElementById("folderList");
 
-var folderArray = [];
-
-
-fetch('/getFileNames').then((response) => {
-	return response.json();
-}).then((obj) => {
-	correctArray(obj);
+fetch('/getFileNames').then((res) => {
+	return res.json();
+}).then(obj => {
+	obj.splice(-1)
+	addList(obj);
+}).catch(err => {
+	console.error("There was an issue while fetching data from server: ", err);
 });
 
-function correctArray(array) {
-	for(var i = 0; i <= (array.length - 6); i++) {
-		folderArray.push(array[i]);
+function addList(itemArray) {
+	for(item in itemArray) {
+		let listItem = document.createElement("li");
+		let link = document.createElement("a");
+		link.href = `${itemArray[item]}/index.html`;
+		link.innerText = itemArray[item];
+		listItem.appendChild(link);
+
+		folderList.appendChild(listItem);
 	}
-	addList();
-}
-
-function addList() {
-	let toBeAdded = '';
-
-	for(item in folderArray) {
-		toBeAdded += `<li><a href="${folderArray[item]}/index.html">${folderArray[item]}</li>`;
-	}
-
-	folderList.innerHTML = toBeAdded;
 }
