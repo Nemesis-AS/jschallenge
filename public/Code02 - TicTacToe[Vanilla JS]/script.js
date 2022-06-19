@@ -1,16 +1,18 @@
-import createFooter from "../CommonFiles/common-script.js";
+import {createFooter} from "../CommonFiles/common-script.js";
 
 createFooter();
 
-
-const gameTable = document.querySelector("#board");
-const restartBtn = document.querySelector("#restartBtn");
+const gameTable = document.getElementById("board");
+const restartBtn = document.getElementById("restartBtn");
+const undoBtn = document.getElementById("undoBtn");
 const textDiv = document.querySelector(".text");
 
 var cells = [];
 var cellValue = [null, null, null, null, null, null, null, null, null];
 var turn = 'X';
 var win = false;
+
+var moves = [];
 
 // Add cells to the list
 for (var i = 1; i <= 9; i++) {
@@ -23,6 +25,7 @@ cells.forEach((el, index) => {
 			//console.log(e.target);
 			e.target.innerText = turn;
 			cellValue[Number(e.target.id[1]) - 1] = turn;
+			moves.push(`${turn}${e.target.id[1]}`);
 			//console.log(cellValue);
 			nextTurn();
 			checkWin();
@@ -75,7 +78,7 @@ function checkDraw() {
 	}
 }
 
-restartBtn.addEventListener('click', (e) => {
+restartBtn.addEventListener("click", (e) => {
 	cells.forEach((el, index) => {
 		el.innerText = '';
 	});
@@ -83,6 +86,15 @@ restartBtn.addEventListener('click', (e) => {
 	win = false;
 	turn = "X";
 	textDiv.innerText = '';
+});
+
+undoBtn.addEventListener("click", e => {
+	if (!moves.length) return;
+
+	let lastMove = moves.splice(-1)[0];
+	document.getElementById(`c${lastMove[1]}`).innerText = "";
+	cellValue[Number(lastMove[1])] = null;
+	nextTurn();
 });
 
 function showText(winner) {

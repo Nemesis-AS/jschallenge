@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Code2 - Tic Tac Toe[Vanilla JS]</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="../commonFiles/common-styles.css">
-</head>
-<body link="#00e" vlink="#00e" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Code2 - Tic Tac Toe[Vanilla JS]</title>
+    <link rel="stylesheet" href="../commonFiles/common-styles.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body link="#00e" vlink="#00e" class="dark">
+    <div class="backLink"><a href="../">&larr;</a></div>
 
-	<div class="backLink"><a href="../">&larr;</a></div>
-	
-	<div class="text"></div>
-	<table id="board">
-		<tbody>
-			<tr>
-				<td id="c1"></td>
-				<td id="c2"></td>
-				<td id="c3"></td>
-			</tr>
-			<tr>
-				<td id="c4"></td>
-				<td id="c5"></td>
-				<td id="c6"></td>
-			</tr>
-			<tr>
-				<td id="c7"></td>
-				<td id="c8"></td>
-				<td id="c9"></td>
-			</tr>
-		</tbody>
-	</table>
+    <div class="text"></div>
+    <table id="board">
+      <tbody>
+        <tr>
+          <td id="c1"></td>
+          <td id="c2"></td>
+          <td id="c3"></td>
+        </tr>
+        <tr>
+          <td id="c4"></td>
+          <td id="c5"></td>
+          <td id="c6"></td>
+        </tr>
+        <tr>
+          <td id="c7"></td>
+          <td id="c8"></td>
+          <td id="c9"></td>
+        </tr>
+      </tbody>
+    </table>
 
-	<button type="button" id="restartBtn">Restart</button>
+    <div class="button-div">
+      <button type="button" id="undoBtn">Undo</button>
+      <button type="button" id="restartBtn">Restart</button>
+    </div>
 
-	<script src="script.js" type="module"></script>
-</body>
+    <script src="script.js" type="module"></script>
+  </body>
 </html>
